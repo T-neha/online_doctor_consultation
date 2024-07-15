@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Doctor Consultation Dashboard">
+    <meta name="author" content="Dashboard">
+    <meta name="keywords" content="Doctor Consultation Dashboard">
+
+    <!-- Title Page-->
+    <title>Online Doctor Consultation Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/style.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="images/icon/doctor-logo.png" alt="CoolAdmin" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        
+                        <li class="active">
+                            <a href="#">
+                                <i class="fas fa-folder-open"></i>Files</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-table"></i>Tables</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user-md"></i>Doctors</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>Surgeons</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-paste"></i>Documents</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"></i>Mobile Number</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/doctor-logo.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-folder-open"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-table"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user-md"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-paste"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"></i></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search"
+                                    placeholder="Search Doctor Here" />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="header-button">
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">Johan Thomus</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="noti-wrap">
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-settings"></i>
+
+                                    </div>
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-notifications-none"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="banner-container">
+                                    <img src="images/icon/banner-1.png" class="banner-img img-fluid"
+                                        alt="High resolution banner">
+                                    <div class="banner-text">
+                                        <h1 class="banner-heading">Online
+                                            Doctor Consultation</h1>
+                                        <p class="para-3">Get response for
+                                            your health problems.</p>
+                                        <a href="#" class="au-btn au-btn-icon au-btn--orange">Find
+                                            a doctor</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 find-special-doc">
+                                <h2 class="title-1 m-b-25">Find
+                                    Specialist</h2>
+
+                                <p class="para-1">Choose your catagory</p>
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-inbox-wrap">
+                                        <div class="au-message js-list-load">
+                                            <div class="au-message-list1">
+                                                <div class="au-message__item1">
+                                                    <div class="au-message__item-inner1">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar1">
+                                                                    <img src="images/icon/dentist.png" alt="John Smith">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Dentist</h5>
+                                                                <p>90
+                                                                    Available</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item1">
+                                                    <div class="au-message__item-inner1">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar1">
+                                                                    <img src="images/icon/ortho.png" alt="John Smith">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Orthopedist</h5>
+                                                                <p>21
+                                                                    Available</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item1">
+                                                    <div class="au-message__item-inner1">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar1">
+                                                                    <img src="images/icon/surgon.png" alt="John Smith">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Surgeon</h5>
+                                                                <p>60
+                                                                    Available</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item1">
+                                                    <div class="au-message__item-inner1">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar1">
+                                                                    <img src="images/icon/general-physician.png"
+                                                                        alt="John Smith">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">General
+                                                                    Physician</h5>
+                                                                <p>50
+                                                                    Available</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4 new-message">
+                                <div class="doctor-online au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-card-title">
+
+                                        <h3>
+                                            Doctor Online
+                                        </h3>
+
+                                    </div>
+                                    <div class="au-inbox-wrap">
+                                        <div class="au-message js-list-load">
+                                            <div class="au-message-list">
+                                                <div class="au-message__item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="images/icon/avatar-02.jpg"
+                                                                        alt="John Smith">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Rony
+                                                                    Brawq</h5>
+                                                                <p>
+                                                                    Surgeon</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap online">
+                                                                <div class="avatar">
+                                                                    <img src="images/icon/avatar-03.jpg"
+                                                                        alt="Nicholas Martinez">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Grill
+                                                                    Methew</h5>
+                                                                <p>Pediatrician</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item effort-sec">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap online">
+                                                                <div class="avatar">
+                                                                    <img src="images/icon/avatar-04.jpg"
+                                                                        alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name effect-name">Yashka
+                                                                    Mitro</h5>
+                                                                <p class="effect-para">Dentist</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="au-message__item-time">
+                                                            <i class="fas fa-phone-volume"></i>
+                                                            <i class="fas fa-comments"></i>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="images/icon/avatar-05.jpg"
+                                                                        alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Alex
+                                                                    Mintos</h5>
+                                                                <p>Urologist</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="images/icon/avatar-01.jpg"
+                                                                        alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Glory
+                                                                    Gill</h5>
+                                                                <p>Surgeon</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 vitamins">
+                                <div class="au-card chart-percent-card">
+                                    <div class="au-card-inner">
+                                        <div class="row vitamins-heading">
+                                            <h3 class="title-2 tm-b-5">Vitamins</h3>
+                                            <p>Expand</p>
+                                        </div>
+
+                                        <div class="row no-gutters">
+                                            <div class="col-xl-6">
+                                                <div class="percent-chart">
+                                                    <canvas id="percent-chart"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="chart-note-wrap">
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--green"></span>
+                                                        <span>Vitamin
+                                                            A</span>
+                                                        <p>21%</p>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--red"></span>
+                                                        <span>Vitamin
+                                                            C</span>
+                                                        <p>28%</p>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--blue"></span>
+                                                        <span>Vitamin
+                                                            D</span>
+                                                        <p>30%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 credit-card">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="au-card-title1">
+                                                <h3 class="card-heading">
+                                                    Doctor. Health Credit
+                                                    Card
+                                                </h3>
+                                                <p class="para-2">Lorem
+                                                    lpsum is simplu dummmy
+                                                    text of the printing and
+                                                    typesetting
+                                                    industry.</p>
+                                                <button class="au-btn au-btn-icon au-btn--orange">Apply
+                                                    Now</button>
+                                                <div class="card-img">
+                                                    <img src="images/icon/card.png" alt="card" />
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 water-balance">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+
+                                            <div class="row water-bal">
+                                                <h3 class="title-2 tm-b-5">Water
+                                                    balance</h3>
+                                                <p>Expand</p>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart3"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2024 Made By Neha
+                                        Tembhare. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
