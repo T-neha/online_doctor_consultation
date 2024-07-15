@@ -14951,3 +14951,10 @@ section {
         overflow-x: hidden;
     }
 }
+
+@media (max-width: 991px) {
+    .water-balance{
+        top: 0px; 
+        left: 0px;
+    }
+}
